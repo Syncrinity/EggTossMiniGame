@@ -6,6 +6,7 @@
 	player_check_egg_throw( id ); // ( A button )
 	player_check_egg_collision( id ); 
 	player_check_aim_trigger( id ); // ( R Trigger )
+	player_check_dash( id );
 	player_update_horizontal( id ); 
 	player_update_vertical( id ); 
 	player_update_direction( id ); 

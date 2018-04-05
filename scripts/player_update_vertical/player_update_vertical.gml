@@ -1,7 +1,13 @@
 var player = argument0;
 
-vertical_speed = 0;
-vertical_speed = left_stick_vertical * move_speed;
+// vertical_speed = 0;
+
+if ( state == PLAYER_MOVE ) {
+	vertical_speed = left_stick_vertical * move_speed;
+} else if ( state == PLAYER_DASH ) {
+	vertical_speed = dash_vertical_speed;
+}
+// player_check_wall_collision_vertical( id );
+
 y += vertical_speed;
 // rectangle.y += vertical_speed;
-

@@ -12,4 +12,5 @@ STATE = EGG_IDLE;
 // 
 player_reference = NO_PLAYER;
 egg_position = NO_POSITION;
+egg_color = c_black;
 

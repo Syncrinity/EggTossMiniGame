@@ -3,11 +3,14 @@
 // player movement variables
 horizontal_speed = 0; 
 vertical_speed = 0; 
+dash_horizontal_speed = 0;
+dash_vertical_speed = 0;
 move_speed = PLAYER_MOVE_SPEED; 
 
 // gameplay variables
 egg_list = ds_list_create();
 player_direction = 0; 
+state = PLAYER_MOVE;
 
 // controller variables
 left_stick_horizontal = 0; 

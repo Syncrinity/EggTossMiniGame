@@ -7,4 +7,10 @@ if ( STATE == EGG_FOLLOW ) {
 	egg_check_state_follow( id );
 } else if ( STATE == EGG_THROWN ) {
 	egg_check_state_thrown( id );
+	// instance_create_depth( x, y, 5, green_paint);
+	effect_create_below( ef_flare, x, y, 0, egg_color );
+	effect_create_below( ef_flare, x, y, 0, egg_color );
+	effect_create_below( ef_flare, x, y, 0, egg_color );
+	effect_create_below( ef_flare, x, y, 0, egg_color );
+	effect_create_below( ef_flare, x, y, 0, egg_color );
 }

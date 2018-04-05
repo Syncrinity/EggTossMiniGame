@@ -34,8 +34,8 @@ with ( egg ) {
 			while ( !place_meeting( x + sign( horizontal_speed ), y, nearest_wall )) {
 				x += sign ( horizontal_speed );
 			}
-			// horizontal_speed *= -1;
-			horizontal_speed *= -1.2;
+			horizontal_speed *= -1;
+			// horizontal_speed *= -1.2;
 			// egg_direction *= -1;
 			// show_message("hit wall! horizontal")
 		}
@@ -78,8 +78,8 @@ with ( egg ) {
 			while ( !place_meeting( x, y + sign( vertical_speed ), nearest_wall )) {
 				y += sign ( vertical_speed );
 			}
-			// vertical_speed *= -1;
-			vertical_speed *= -1.2;
+			vertical_speed *= -1;
+			// vertical_speed *= -1.2;
 			// egg_direction *= -1;
 			// show_message("hit wall! horizontal")
 		}	

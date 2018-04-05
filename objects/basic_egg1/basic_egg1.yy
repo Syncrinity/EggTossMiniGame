@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "basic_egg1",
     "eventList": [
-        
+        {
+            "id": "bbb62bce-734d-43bb-94c5-121e23f251f6",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "e22ebadc-7988-4334-bc70-2c4d4952602f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
