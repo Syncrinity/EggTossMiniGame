@@ -16,7 +16,7 @@ for (var i = 0; i < number_of_players; i++;)
 	var p_one = instance_create_depth( room_width / 2 - 64, room_height / 2, 0, player_one );
 	with ( p_one ) {
 		controller_number = 0;
-		gamepad_set_axis_deadzone( controller_number, .30 ); 
+		gamepad_set_axis_deadzone( controller_number, CONTROLLER_DEADZONE ); 
 	}
 // }
 
@@ -25,7 +25,7 @@ for (var i = 0; i < number_of_players; i++;)
 	var p_two = instance_create_depth( room_width / 2, room_height / 2 - 64, 0, player_two );
 	with ( p_two ) {
 		controller_number = 1;
-		gamepad_set_axis_deadzone( controller_number, .30 ); 
+		gamepad_set_axis_deadzone( controller_number, CONTROLLER_DEADZONE ); 
 	}
 	
 // }

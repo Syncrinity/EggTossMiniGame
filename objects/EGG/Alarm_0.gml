@@ -5,5 +5,5 @@ horizontal_speed = 0;
 vertical_speed = 0;
 STATE = EGG_IDLE;
 
-effect_create_below( ef_ring, x, y, 0, c_black )
+effect_create_below( ef_ring, x, y, 0, egg_color )
 

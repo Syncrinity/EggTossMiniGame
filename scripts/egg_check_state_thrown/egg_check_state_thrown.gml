@@ -31,10 +31,14 @@ with ( egg ) {
 	if ( STATE == EGG_THROWN ) {
 		if ( place_meeting( x + horizontal_speed, y, WALL )) {
 			var nearest_wall = instance_nearest( x + horizontal_speed, y, WALL );
+			/*
 			while ( !place_meeting( x + sign( horizontal_speed ), y, nearest_wall )) {
 				x += sign ( horizontal_speed );
+				y += sign( vertical_speed );
 			}
+			*/
 			horizontal_speed *= -1;
+			vertical_speed *= -1;
 			// horizontal_speed *= -1.2;
 			// egg_direction *= -1;
 			// show_message("hit wall! horizontal")
@@ -52,6 +56,7 @@ with ( egg ) {
 		if ( nearest_player != player_reference ) {
 			if ( place_meeting( x, y + vertical_speed, nearest_player )) {
 				while ( !place_meeting( x, y + sign( vertical_speed ), nearest_player )) {
+					x += sign ( horizontal_speed );
 					y += sign ( vertical_speed );
 				}
 				horizontal_speed = 0;
@@ -75,10 +80,13 @@ with ( egg ) {
 		// check if egg is colliding with wall
 		if ( place_meeting( x, y + vertical_speed, WALL )) {
 			var nearest_wall = instance_nearest( x, y + vertical_speed, WALL );
+			/*
 			while ( !place_meeting( x, y + sign( vertical_speed ), nearest_wall )) {
 				y += sign ( vertical_speed );
 			}
+			*/
 			vertical_speed *= -1;
+			horizontal_speed *= -1;
 			// vertical_speed *= -1.2;
 			// egg_direction *= -1;
 			// show_message("hit wall! horizontal")
